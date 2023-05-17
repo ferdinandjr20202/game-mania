@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap');
+
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #1E1C21;
+    height: 80px;}
+
+
+
+
+    .banner {
+        height: 550px;    
+        padding: 15px;
+        background-repeat:repeat-x;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    
+
+.container {
+    max-width: 1200px;
+}
+
+/* .container-grid {
+    width: 1200px;
+    margin: 0 auto;
+} */
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.menu {
+    width: 650px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#barras {
+    display: none;
+}
+
+.icone-menu {
+    height: 40px;
+}
+
+
+body{
+    background-color:black;
+}
+body{
+    background-image: url(../site.1/Imagens/imglogin.jpeg);
+   background-repeat: no-repeat;
+}
+.login label{
+    font-size: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif
+
+}
+
+.login input{
+    height: 30px;
+    width: 300px;
+}
+
+.botao-enviar{
+    /* width: 180px; */
+    width: 460px;
+    color: white;
+    background-color: #C31616;
+    height: 35px;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.campo-email{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    height: 50px;
+    padding: 20px;
+}
+.campo-senha{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+
+}
+
+.login{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 200px;
+}
+
+
+@media screen and (max-width: 1100px) {
+    .cabecalho {
+        position: relative;
+    }
+    
+    .menu {
+        display: none;
+
+        position: absolute;
+        top: 80px;
+        right: 0px;
+
+        height: 400px;
+
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: #1E1C21;
+        align-items: center;
+
+    }
+
+    .menu-ativo {
+        display: flex;
+    }
+
+    #barras {
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .conteudo-sobre {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        background-color: darkblue;
+    }
+
+    .logo {
+        width: 100px;
+    }
+}
+footer {
+    background-color: black;
+
+}
+.logo-rodape{
+    width: 100px;
+    height:50px;
+}
+.rodape {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+
+    color: white;
+}
+
+.links-footer {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links-footer h2 {
+    font-family: 'Titillium Web';
+    font-size: 24px;
+}
+
+.links-footer a {
+    font-family: 'Titillium Web';
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+
+.links-footer a:hover {
+    color: #0d6efd;
+}
+
+.sociais {
+    width: 31%;
+}
+
+.sociais p {
+    font-family: 'Titillium Web';    
+}
+
+.sociais form {
+    width: 100%;
+    display: flex; 
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.sociais input[type="email"]{
+    height: 37px;
+    width: 65%;  
+    border-radius: 0px; 
+    border-style: none; 
+    text-indent: 5px;
+}
+
+.sociais input[type="email"]::placeholder {
+    color: #B8B3B3;
+    font-weight: bold;
+}
+
+.sociais button{
+    width: 35%;
+    color: white;
+    background-color:#13293D;
+    border: none;
+    font-family: 'Titillium Web';
+    font-weight: 600;
+}
+
+.siga-nos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.8em;
+}
+
+.siga-nos h2 {
+    font-family: 'Titillium Web';
+    font-size: 23px;
+}
+
+@media screen and (max-width: 1000px) {
+    .cabecalho {
+        position: relative;
+    }
+    
+    .menu {
+        display: none;
+
+        position: absolute;
+        top: 80px;
+        right: 0px;
+
+        height: 400px;
+
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: #1E1C21;
+        align-items: center;
+
+    }
+
+    .menu-ativo {
+        display: flex;
+    }
+
+    #barras {
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .conteudo-sobre {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        background-color: rgb(3, 97, 22);
+    }
+
+    .logo {
+        width: 200px;
+     
+    }
+}
+
+
